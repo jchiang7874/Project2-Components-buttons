@@ -1,0 +1,133 @@
+body {
+    margin: 50px auto;
+    text-align: center;
+    background: url("background-dim.png") no-repeat center fixed;
+    background-size: cover;
+}
+
+.button {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin: 0 20px;
+}
+
+/***********************************************/
+/******************* Buy Now ******************/
+/*********************************************/
+
+div.button {
+    background-color: aqua;
+    animation-name: buy-now;
+    animation-duration: 3s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+div.button:hover {
+    cursor: pointer;
+}
+
+@keyframes buy-now {
+    0% {left: 0;}
+    50% {background-color: #dd33cb; left: 30px;}
+    100% {background-color: #00ffff; left: 0;}
+}
+
+/**********************************************/
+/****************** Send Mail ****************/
+/********************************************/
+
+button.button {
+    background-color: #0540EF;
+    border: none;
+    font-size: 1em;
+    box-shadow: 0 5px 5px #011844;
+    color: #ECEBEB;
+}
+
+button.button:hover:before {
+    content: 'Are you sure you want to ';
+}
+
+
+/**********************************************/
+/*************** Search (anchor) **************/
+/**********************************************/
+
+a.button {
+    background-color: indigo;
+    color: #ECEBEB;
+    text-decoration: none;
+}
+
+a.button:hover {
+    background-image: url("search.png");
+    width: 100px;
+    height: 114px;
+    color: rgba(235, 236, 236, 0.1);
+}
+
+/**********************************************/
+/***************** Button-sm *****************/
+/*********************************************/
+
+.button.button-sm {
+    background-color: #6495ed;
+    animation-name: none;
+}
+
+.button.button-sm:hover {
+    border-radius: 0 30px 0 30px;
+    transform: scale(0.6, 0.6);
+}
+
+
+/**********************************************/
+/****************** Button-md *****************/
+/**********************************************/
+
+.button.button-md {
+    background-color: #00fa9a;
+    animation-name: none;
+    width: 70px;
+    height: 70px;
+}
+
+.button.button-md:hover {
+    padding: 10px;
+    animation-name: turning;
+}
+
+@keyframes turning {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/**********************************************/
+/****************** Button-lg *****************/
+/**********************************************/
+
+.button.button-lg {
+    background-color: #ff1493;
+    animation-name: none;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+}
+
+.button.button-lg:hover {
+    transition: 2s ease;
+    width: 225px;
+    height: 225px;
+    line-height: 225px;
+}
+
