@@ -1,0 +1,128 @@
+body {
+    margin: 50px auto;
+    text-align: center;
+    background: url("background-dim.png") no-repeat center fixed;
+    background-size: cover;
+}
+
+.button {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    border-radius: 25px 0 25px 25px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin: 0 20px;
+    background-color: #4DD18B;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.button:hover {
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.5);
+}
+
+/***********************************************/
+/******************* Buy Now ******************/
+/*********************************************/
+
+div.button:hover {
+    cursor: pointer;
+    animation-name: buy-now;
+    animation-duration: 3s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+@keyframes buy-now {
+    0% {left: 0;}
+    50% {background-color: #dd33cb; left: 30px;}
+    100% {background-color: #00ffff; left: 0;}
+}
+
+/**********************************************/
+/****************** Send Mail ****************/
+/********************************************/
+
+button.button:hover {   
+    background: url("airplane.png") no-repeat center;
+    background-size: contain;
+    background-color: #4DD18B;
+    color: transparent;
+}
+
+button {
+    color: #f66bc0;
+}
+
+/**********************************************/
+/*************** Search (anchor) **************/
+/**********************************************/
+
+a.button {
+    text-decoration: none;
+}
+
+a.button:hover {
+    background-color: indigo;
+    color: #ECEBEB;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/**********************************************/
+/***************** Button-sm *****************/
+/*********************************************/
+
+.button.button-sm {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+.button.button-sm:hover {
+    transform: scale(0.7, 0.7);
+    animation: none;
+}
+
+
+/**********************************************/
+/****************** Button-md *****************/
+/**********************************************/
+
+.button.button-md:hover {
+    padding: 10px;
+    animation-name: turning;
+    color: #ECEBEB;
+}
+
+@keyframes turning {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/**********************************************/
+/****************** Button-lg *****************/
+/**********************************************/
+
+.button.button-lg {
+    height: 70px;
+    line-height: 70px;
+}
+
+.button.button-lg:hover {
+    transition: 2s ease;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    animation: none;
+}
+
