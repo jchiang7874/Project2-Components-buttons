@@ -1,11 +1,17 @@
 body {
-    margin: 50px auto;
+    margin: 90px auto;
     text-align: center;
     background: url("background-dim.png") no-repeat center fixed;
     background-size: cover;
 }
 
+div, button {
+    margin: 0;
+    padding: 0;
+}
+
 .button {
+    min-width: 100px;
     display: inline-block;
     height: 50px;
     line-height: 50px;
@@ -23,12 +29,21 @@ body {
 
 .button:hover {
     box-shadow: inset 0 2px 5px rgba(0,0,0,0.5);
+    background-color: rgba(255, 245, 153, 0.80);
 }
 
 /***********************************************/
 /******************* Buy Now ******************/
 /*********************************************/
 
+div.button:first-of-type:hover  {
+    background: url("buy.png") no-repeat center;
+    background-size: contain;
+    background-color: #dedfe3;
+    color: transparent;
+}
+
+/*
 div.button:hover {
     cursor: pointer;
     animation-name: buy-now;
@@ -42,6 +57,7 @@ div.button:hover {
     50% {background-color: #dd33cb; left: 30px;}
     100% {background-color: #00ffff; left: 0;}
 }
+*/
 
 /**********************************************/
 /****************** Send Mail ****************/
@@ -67,11 +83,20 @@ a.button {
 }
 
 a.button:hover {
+    background: url("search1.png") no-repeat center;
+    background-size: contain;
+    background-color: #dedfe3;
+    color: transparent;
+}
+
+/*
+a.button:hover {
     background-color: indigo;
     color: #ECEBEB;
     text-decoration: none;
     border-radius: 50%;
-}
+}*/
+
 
 /**********************************************/
 /***************** Button-sm *****************/
@@ -83,16 +108,17 @@ a.button:hover {
     padding: 0 10px;
 }
 
+/*
 .button.button-sm:hover {
     transform: scale(0.7, 0.7);
     animation: none;
-}
+}*/
 
 
 /**********************************************/
 /****************** Button-md *****************/
 /**********************************************/
-
+/*
 .button.button-md:hover {
     padding: 10px;
     animation-name: turning;
@@ -107,7 +133,7 @@ a.button:hover {
         transform: rotate(360deg);
     }
 }
-
+*/
 
 /**********************************************/
 /****************** Button-lg *****************/
@@ -117,12 +143,12 @@ a.button:hover {
     height: 70px;
     line-height: 70px;
 }
-
+/*
 .button.button-lg:hover {
     transition: 2s ease;
     width: 150px;
     height: 150px;
     line-height: 150px;
     animation: none;
-}
+}*/
 
